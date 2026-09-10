@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IRB Process Management System</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-top">
+      <div class="brand">
+        <div class="brand-mark">IRB</div>
+        <div class="brand-text">
+          <h1>IRB Process Management System</h1>
+          <span>Institutional Review Board · Workflow &amp; Routing (Prototype)</span>
+        </div>
+      </div>
+      <div class="header-controls">
+        <div class="role-pill">
+          <label for="role-select">Preview as</label>
+          <select id="role-select">
+            <option value="user">Researcher</option>
+            <option value="admin">IRB Administrator</option>
+          </select>
+        </div>
+        <label>Acting as
+          <select id="user-select"></select>
+        </label>
+        <button id="reset-demo" class="btn btn-sm" title="Clear localStorage and reload seed data">Reset demo data</button>
+      </div>
+    </div>
+    <nav id="main-nav"></nav>
+  </header>
+
+  <main>
+    <div id="view-root"></div>
+  </main>
+
+  <footer class="app-footer">
+    Prototype for demonstration purposes only. All data is stored locally in your browser (localStorage) — nothing is sent to a server.
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
