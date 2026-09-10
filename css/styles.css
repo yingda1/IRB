@@ -379,3 +379,36 @@ footer.app-footer {
   font-size: 12px;
   padding: 24px;
 }
+
+/* ---- IRPF form sections ---- */
+
+.form-section { margin-bottom: 22px; padding-bottom: 4px; }
+.form-section:not(:last-child) { border-bottom: 1px solid var(--border); padding-bottom: 18px; }
+.form-section-title { font-size: 14px; color: var(--primary-dark); margin: 0 0 14px; }
+
+.radio-row { display: flex; gap: 16px; flex-wrap: wrap; }
+.radio-opt { display: flex; align-items: center; gap: 6px; font-weight: 400; font-size: 13px; }
+.radio-opt input { width: auto; }
+
+.counter { font-size: 11px; color: var(--text-muted); margin-top: 4px; text-align: right; }
+.field-note { font-size: 12px; margin-top: 4px; }
+.file-existing { font-size: 12px; margin-top: 6px; }
+
+.tip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  background: var(--primary-light);
+  color: var(--primary-dark);
+  font-size: 11px;
+  cursor: help;
+  font-weight: 700;
+}
+
+.form-actions { display: flex; gap: 10px; margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--border); }
+
+.reviewer-summary { list-style: none; margin: 0 0 12px; padding: 0; font-size: 13px; }
+.reviewer-summary li { padding: 6px 0; border-bottom: 1px solid var(--border); }
+.reviewer-summary li:last-child { border-bottom: none; }
